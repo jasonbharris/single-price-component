@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  display: grid;
+}
+
+.container {
+  width: 80%;
+}
+
+header,
+.left-half,
+.right-half {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 30px 0;
+}
+
+header h1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 30px;
+  font-size: 2.8rem
+}
+
+header h2 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+}
+
+header p {
+  width: 300px;
+  font-size: 1.6rem;
+  line-height: 3.3rem;
+  color: hsl(218, 22%, 67%);
+}
+
+.left-half {
+  height: 30vh;
+  padding: 110px 0;
+  background-color: hsl(179, 62%, 43%);
+}
+
+.left-half h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.left-half p {
+  font-size: 1.6rem;
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 30px;
+}
+
+.pricing {
+  margin-bottom: 5px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing .price {
+  font-size: 4rem;
+  margin-right: 10px;
+  margin-left: -190px;
+  color: hsl(204, 43%, 93%);
+}
+
+.pricing .pricing-time {
+  color: hsl(218, 22%, 67%);
+  font-weight: 700;
+}
+
+.left-half button {
+  font-size: 2.3rem;
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(71, 73%, 54%);
+  width: 80%;
+  padding: 1.4rem 3.5rem;
+  border-radius: .5rem;
+  margin-bottom: 40px;
+}
+
+
+.right-half {
+  background-color: hsl(218, 22%, 67%);
+  color: hsl(204, 43%, 93%);
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 30px;
+}
+
+.right-half h1 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.right-half p {
+  width: 220px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+  }
+
+  header {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    height: 50vh;
+  }
+
+  header p {
+    width: 600px;
+  }
+
+  .left-half {
+    grid-column: 2/1;
+    grid-row: 2/3;
+    height: 50vh;
+    padding-left: 10%;
+  }
+
+  .left-half button {
+    width: 80%;
+  }
+
+  .right-half {
+    grid-column: 2/2;
+    grid-row: 2/3;
+    height: 50vh;
+    padding-top: 80px;
+    align-items: center;
+  }
+
+.regular {
+  width: 90%;
+  letter-spacing: .2rem;
+}
+
+.right-half {
+  padding-left: 10%;
+}
+
+  .right-half p {
+    font-size: 1.8rem;
+    line-height: 3.3rem;
+    width: 260px;
+  }
+}
+
+.pricing .pricing-time {
+  margin-top: 25px;
+}
